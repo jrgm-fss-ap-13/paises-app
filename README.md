@@ -1,59 +1,79 @@
-# CountryApp
+# CountryApp 🌍
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
+Aplicación web desarrollada con Angular para buscar y explorar información de países de todo el mundo. Utiliza la API de REST Countries para obtener datos actualizados sobre países, sus capitales, regiones y más.
 
-## Development server
+## 📋 Descripción del Proyecto
 
-To start a local development server, run:
+CountryApp es una aplicación SPA (Single Page Application) que permite a los usuarios:
+- Buscar países por nombre
+- Buscar países por capital
+- Explorar países por región
+- Ver información detallada de cada país
+- Guardar países favoritos
+
+La aplicación consume la API pública de [REST Countries](https://restcountries.com/) para obtener información actualizada sobre los países del mundo.
+
+## ✨ Características
+
+- 🔍 **Búsqueda por nombre de país**: Encuentra países escribiendo su nombre
+- 🏛️ **Búsqueda por capital**: Busca países a través de sus capitales
+- 🌎 **Búsqueda por región**: Explora países agrupados por regiones geográficas
+- ⭐ **Sistema de favoritos**: Guarda tus países favoritos para acceso rápido
+- 📱 **Diseño responsive**: Interfaz adaptable a diferentes tamaños de pantalla
+- ⚡ **Caché de consultas**: Optimización de rendimiento mediante caché de búsquedas
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Angular** 19.0.0
+- **TypeScript** 5.6.2
+- **Tailwind CSS** 3.4.17
+- **DaisyUI** 4.12.24
+- **RxJS** 7.8.0
+- **Angular Router** para navegación
+- **HTTP Client** para consumo de APIs
+
+## 📦 Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- **Node.js** (versión 18 o superior)
+- **npm** (viene incluido con Node.js) o **yarn**
+
+Puedes verificar las versiones instaladas ejecutando:
+
+```bash
+node --version
+npm --version
+```
+
+## 🚀 Instalación
+
+1. **Clona el repositorio** (o navega a la carpeta del proyecto):
+
+```bash
+cd 04-country-app
+```
+
+2. **Instala las dependencias**:
+
+```bash
+npm install
+```
+
+Este comando instalará todas las dependencias necesarias definidas en `package.json`.
+
+## ▶️ Cómo Levantar el Proyecto
+
+Una vez instaladas las dependencias, puedes levantar el proyecto de desarrollo de las siguientes formas:
+
+### Opción 1: Usando npm start
+
+```bash
+npm start
+```
+
+### Opción 2: Usando Angular CLI directamente
 
 ```bash
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
