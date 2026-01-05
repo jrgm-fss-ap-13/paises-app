@@ -1,0 +1,46 @@
+
+<section class="stats shadow flex justify-self-center mt-20">
+    <div class="stat">
+      <div class="stat-figure text-primary">
+        <svg 
+        xmlns="http://www.w3.org/2000/svg"
+         width="24" 
+         height="24" 
+         viewBox="0 0 24 24"><path fill="currentColor" 
+         d="M11.225 10.525q.525 0 .888-.363t.362-.887t-.362-.888t-.888-.362t-.887.363t-.363.887t.363.888t.887.362M20.55 22q-1.05 0-2.825-.875t-3.8-2.375q-.475.125-.962.188t-.988.062q-2.925 0-4.95-2.025T5 12.025q0-.5.075-1t.2-.975Q3.8 8.025 2.913 6.263T2.025 3.45q0-.675.375-1.062T3.425 2t1.688.45t2.862 1.525Q7.45 4.25 7 4.55t-.875.65q-.475-.275-.925-.475T4.25 4.3q.45.95.963 1.85T6.3 7.925q.95-1.35 2.425-2.125t3.25-.775q2.925 0 4.963 2.038t2.037 4.962q0 1.775-.788 3.25T16.05 17.7q.875.575 1.788 1.1t1.862.95q-.2-.475-.412-.925T18.8 17.9q.375-.425.675-.9t.55-.975q1.15 1.95 1.563 2.913T22 20.55q0 .725-.4 1.088T20.55 22m-6.825-6.975q.425 0 .713-.288t.287-.712t-.287-.712t-.713-.288t-.712.288t-.288.712t.288.713t.712.287m1.25-3.5q.325 0 .538-.213t.212-.537t-.212-.537t-.538-.213t-.537.213t-.213.537t.213.538t.537.212"/>
+        </svg>
+      </div>
+      <div class="stat-title">{{country().name}}</div>
+      <div class="stat-value text-primary">{{ country().capital }}</div>
+      <div class="stat-desc">{{ country().cca2 }}</div>
+    </div>
+  
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24">
+        <path fill="currentColor" 
+        d="M18 14v-3h-3V9h3V6h2v3h3v2h-3v3zm-9-2q-1.65 0-2.825-1.175T5 8t1.175-2.825T9 4t2.825 1.175T13 8t-1.175 2.825T9 12m-8 8v-2.8q0-.85.438-1.562T2.6 14.55q1.55-.775 3.15-1.162T9 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T17 17.2V20z"/>
+        </svg>
+      </div>
+      <div class="stat-title">Población</div>
+      <div class="stat-value text-secondary">{{country().population | number }}</div>
+      <div class="stat-desc">{{ currentYear() }}</div>
+    </div>
+  
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <div class="avatar">
+          <div class="w-16">
+            <img [src]="country().flagSvg" />
+          </div>
+        </div>
+      </div>
+      <div class="stat-value">{{ country().flag }}</div>
+      <div class="stat-value">{{ country().region }}</div>
+      <div class="stat-title">{{ country().subRegion }}</div>
+      
+    </div>
+</section>

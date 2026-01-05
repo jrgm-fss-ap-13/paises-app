@@ -1,0 +1,20 @@
+
+<section>
+<input 
+type="text" 
+class="input input-bordered mr-2 w-56"
+[placeholder]=placeholder()
+autofocus
+#txtSearch
+(keyup.enter)="value.emit(txtSearch.value)"
+(keyup)="inputValue.set(txtSearch.value)"
+[value]="initialValue()"
+>
+<!-- para tener el valor de la señal inicializado en el input -->
+
+
+
+<button 
+(click)="value.emit(txtSearch.value)"
+class="btn btn-primary">Buscar</button>
+</section>
